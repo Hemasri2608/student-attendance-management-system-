@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Admin | AttendEase</title><link rel="stylesheet" href="style.css"></head>
+<body>
+  <header class="topbar"><a class="brand" href="index.html">AttendEase</a><nav><a href="index.html">Home</a><a href="user.html">Student View</a></nav></header>
+  <main class="container">
+    <div class="page-heading"><p class="eyebrow">ADMIN MODULE</p><h1>Attendance dashboard</h1><p>Add students and record daily attendance.</p></div>
+    <section class="stats"><div class="stat"><span>Total students</span><strong id="totalCount">0</strong></div><div class="stat"><span>Present today</span><strong id="presentCount">0</strong></div><div class="stat"><span>Absent today</span><strong id="absentCount">0</strong></div></section>
+    <section class="panel"><h2>Add a student</h2><form id="studentForm" class="form-grid"><label>Student ID<input id="studentId" required placeholder="e.g. STU101"></label><label>Full name<input id="studentName" required placeholder="Student name"></label><label>Class / Section<input id="studentClass" required placeholder="e.g. CSE-A"></label><button class="btn primary" type="submit">Add student</button></form></section>
+    <section class="panel"><div class="section-title"><div><h2>Student attendance</h2><p class="muted">Choose Present or Absent for each student.</p></div><label class="date-label">Attendance date<input id="attendanceDate" type="date"></label></div><div class="table-wrap"><table><thead><tr><th>ID</th><th>Name</th><th>Class</th><th>Attendance</th><th>Action</th></tr></thead><tbody id="studentRows"></tbody></table></div><p id="emptyMessage" class="empty">No students yet. Add your first student above.</p><div class="actions"><button class="btn secondary" id="exportBtn" type="button">Export CSV</button><button class="btn danger" id="clearBtn" type="button">Clear all students</button></div></section>
+  </main>
+  <footer>Demo only · Store real student data securely in a production system.</footer>
+  <script src="script.js"></script>
+</body>
+</html>

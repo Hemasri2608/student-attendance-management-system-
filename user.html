@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Student View | AttendEase</title><link rel="stylesheet" href="style.css"></head>
+<body>
+  <header class="topbar"><a class="brand" href="index.html">AttendEase</a><nav><a href="index.html">Home</a><a href="admin.html">Admin Panel</a></nav></header>
+  <main class="container user-page">
+    <div class="page-heading"><p class="eyebrow">STUDENT MODULE</p><h1>Check your attendance</h1><p>Enter your student ID to see your attendance record.</p></div>
+    <section class="panel lookup-panel"><form id="lookupForm" class="lookup-form"><label for="lookupId">Student ID</label><input id="lookupId" required placeholder="Enter your ID, e.g. STU101"><button class="btn primary" type="submit">Find record</button></form><div id="studentResult" class="result" aria-live="polite"><p class="muted">Your attendance summary will appear here.</p></div></section>
+  </main>
+  <footer>AttendEase · Student attendance portal</footer>
+  <script src="script.js"></script>
+</body>
+</html>
